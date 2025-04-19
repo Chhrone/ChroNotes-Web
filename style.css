@@ -1,0 +1,55 @@
+/* Styling umum untuk seluruh halaman */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    min-height: 100vh;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #f4f6f9;
+    line-height: 1.6;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.container {
+    min-width: 1440px;
+    margin: 0 auto;
+    padding: 32px;
+    flex: 1 0 auto;
+}
+
+.notes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 24px;
+    align-items: start;
+    margin-bottom: 2rem;
+    padding: 0 8px;
+}
+
+footer {
+    flex-shrink: 0;
+    text-align: center;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    color: #6c757d;
+    font-size: 0.9rem;
+    border-top: 1px solid #e9ecef;
+    width: 100%;
+    position: sticky;
+    bottom: 0;
+}
+
+.swal2-container {
+    position: fixed !important;
+    z-index: 9999 !important;
+}
